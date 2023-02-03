@@ -122,7 +122,6 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100vw;
     margin-bottom: 100px;
 }
 /* tarjetas de los conocimientos y de los proyectos, reutilice todos los estilos */
@@ -359,6 +358,9 @@ footer{
         font-size: 25px;
         font-weight: 700;
     }
+    .about__presentation{
+        padding: 0px;
+    }
     .about__presentation h1{
         font-size: 30px;
     }
@@ -367,13 +369,15 @@ footer{
         width: 40%;
     }
     .about__presentation a{
-        padding: 10px 15px;
+        padding: 10px;
+    }
+    .about__image{
+        height: 100%;
+        width: 100%;
     }
     .about__image img{
         width: 300px;
-        height: 100%;
         max-width: 600px;
-        padding-left: 100px;
     }
     /* conocimientos y proyectos*/
     .skills h2, .projects h2{
@@ -385,25 +389,93 @@ footer{
         width: 50%;
     }
     .skills__container, .projects__container{
-        width: 100vw;
-        max-width: 250px;
+        max-width: 300px;
     }
     .skills__image, .projects__image{
-        width: 60vw;
-        margin-left: 90px;
+        width: 80%;
     }
     /* seccion de contactame */
     .contac__contac{
         flex-direction: column;
     }
-    .contac__container{
-        width: 80vw;
+    .contac__container, .contac__icon, .form{
+        width: 100%;
     }
-    .contac__icon{
-        width: 100vw;
+    .cite__cite{
+        padding: 0px;
     }
     /* footer */
-    .navbar__ulfooter li{
-        margin: 0.5px;
+    footer{
+        width: 100%;
     }
+    .navbar__ulfooter li{
+        margin: 0px;
+        font-size: 14px;
+    }
+}
+/* tablet */
+@media (min-width: 761px) and (max-width:1023px){
+    .navbar{
+        display: none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about__hello{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .about__presentation{
+        padding: 0px;
+    }
+    .about__presentation h1{
+        font-size: 30px;
+    }
+    .about__p{
+        font-size: 20px;
+        width: 40%;
+    }
+    .about__presentation a{
+        padding: 10px;
+    }
+    .about__image{
+        height: 100%;
+        width: 100%;
+    }
+    .about__image img{
+        width: 300px;
+        max-width: 600px;
+    }
+    /* conocimientos y proyectos*/
+    .skills h2, .projects h2{
+        font-size: 35px;
+        padding: 0px 10px;
+    }
+    .skills__image, .projects__image{
+        width: 40%;
+        max-width: 300px;
+    }
+
+}
+/* ________________  Estilos de ls pagina coming soon________________ */
+.coming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+.coming__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coming__image img{
+    width: 60%;
+}
+.coming__link{
+    background-color: var(--colorHover);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
