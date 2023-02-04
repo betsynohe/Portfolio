@@ -479,3 +479,13 @@ footer{
     margin-top: 30px;
     text-transform: uppercase;
 }
+@media (max-width:760px){
+    footer{
+        margin-top: 350px;
+    }
+}
+@media (min-width: 761px) and (max-width:1023px){
+    footer{
+        margin-top: 350px;
+    }
+}
