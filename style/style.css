@@ -481,11 +481,11 @@ footer{
 }
 @media (max-width:760px){
     footer{
-        margin-top: 350px;
+        margin-top: 300px;
     }
 }
 @media (min-width: 761px) and (max-width:1023px){
     footer{
-        margin-top: 350px;
+        margin-top: 300px;
     }
 }
