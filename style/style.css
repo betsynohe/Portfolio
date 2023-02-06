@@ -305,7 +305,7 @@ footer{
 }
 .navbar__ulfooter{
     display: flex;
-    flex-wrap: wrap;
+    padding-top: 30px;
 }
 .navbar__ulfooter li{
     margin: 10px;
